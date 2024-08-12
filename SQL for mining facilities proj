@@ -1,0 +1,12 @@
+--'hillsborough' Data Set includes all mining facilities in the Hillsborough County region. 
+
+-- all of the mining facilities in Hillsborough county for phosphorus-phosphates, multiple different fields for commodities exist
+SELECT*FROM hillsborough 
+where commodity ='Phosphorus-Phosphates'
+OR commodity like '%Phosphorus-Phosphates%'
+OR commodity2 like '%Phosphorus-Phosphates%';
+
+--to view the selected data and confirm that only specified mining facilities are in the table
+SELECT*FROM hillsborough;
+
+
